@@ -1,0 +1,20 @@
+{{ define "main" }}
+<h2>Bienvenido a mi sitio web</h2>
+<p>Hola, soy <strong>Javier Peromingo</strong>, estudiante de 2&ordm; ASIR. Este es mi mini sitio web creado con <a href="https://gohugo.io">Hugo</a>, el generador de sitios est&aacute;ticos m&aacute;s r&aacute;pido del mundo.</p>
+
+<p>Este sitio ha sido creado como parte de la pr&aacute;ctica <strong>P1.2 de IAW</strong> (Implantaci&oacute;n de Aplicaciones Web), siguiendo las lecciones de <a href="https://hugocodex.org/es/empezando/">hugocodex.org</a>.</p>
+
+<h2>Sobre m&iacute;</h2>
+<p>Puedes ver mis proyectos en mi <a href="https://github.com/javiperomingo/" class="github-link">&#128187; Perfil de GitHub</a></p>
+
+<h2>&Uacute;ltimas entradas</h2>
+<ul class="post-list">
+{{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="post-meta">{{ .Date.Format "2 January 2006" }}</div>
+        <p>{{ .Summary }}</p>
+    </li>
+{{ end }}
+</ul>
+{{ end }}

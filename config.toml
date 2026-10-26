@@ -1,0 +1,9 @@
+baseURL = "http://localhost:1313/"
+languageCode = "es"
+title = "Mi Sitio Hugo - Javier Peromingo"
+theme = ""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
