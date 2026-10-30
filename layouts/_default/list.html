@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+    <h1>Posts</h1>
+    <ul class="post-list">
+    {{ range .RegularPages }}
+        <li>
+            {{ if .Date }}<div class="post-date">{{ .Date | time.Format ":date_long" }}</div>{{ end }}
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary | plainify }}... <a href="{{ .RelPermalink }}">Read more</a></p>
+        </li>
+    {{ end }}
+    </ul>
+{{ partial "footer.html" . }}
