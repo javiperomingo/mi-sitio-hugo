@@ -1,0 +1,8 @@
+baseURL = 'http://localhost:1313/'
+locale = 'es-es'
+title = 'Javier Peromingo — Mini Sitio Web con Hugo (IAW)'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
