@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi sitio web con Hugo</title>
+    <title>{{ .Title }}</title>
 </head>
 <body>
-    Una página web muy simple
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
 </body>
 </html>
