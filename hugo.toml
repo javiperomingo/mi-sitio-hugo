@@ -2,7 +2,7 @@ baseURL = "https://javiperomingo.github.io/mi-sitio-hugo/"
 languageCode = "es"
 locale = "es-es"
 title = "Sitio Web de Javier Peromingo — IAW 2º ASIR"
-publishDir = "docs"
+publishDir = "html"
 disableKinds = ["taxonomy", "term"]
 
 [params]

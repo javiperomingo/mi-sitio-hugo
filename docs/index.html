@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web de Javier Peromingo — IAW 2º ASIR</title>
+    <meta name="description" content="Práctica de despliegue de sitio estático con Hugo y GitHub Pages — Implantación de Aplicaciones Web (2º ASIR)">
+    <link rel="stylesheet" href="/mi-sitio-hugo/css/estilo.css">
+	<meta name="generator" content="Hugo 0.169.0">
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a class="brand" href="/mi-sitio-hugo/">Javier Peromingo · 2º ASIR</a>
+            <nav>
+                <a href="/mi-sitio-hugo/">Inicio</a>
+                <a href="/mi-sitio-hugo/posts/">Blog</a>
+                <a href="/mi-sitio-hugo/contact/">Contacto y Sobre mí</a>
+                <a href="https://github.com/javiperomingo" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+
+    <span class="badge">PrácticaX2 · Hugo + GitHub Pages</span>
+    <h1>Bienvenido al sitio web de Javier Peromingo</h1>
+    <p>¡Hola! Soy <strong>Javier Peromingo</strong>, estudiante de <strong>2º de Administración de Sistemas Informáticos en Red (ASIR)</strong>. Este es mi sitio web estático construido con <strong>Hugo</strong> y desplegado en <strong>GitHub Pages</strong> para el módulo de <strong>Implantación de Aplicaciones Web (IAW)</strong>.</p>
+<p>En este espacio documento mis prácticas de despliegue web, automatización con Git y administración de infraestructuras.</p>
+<h2 id="secciones-del-sitio">Secciones del sitio</h2>
+<ul>
+<li><a href="posts/">Ir al Blog de IAW</a> — Artículos técnicos sobre generadores de sitios estáticos, Hugo y despliegue continuo en GitHub Pages.</li>
+<li><a href="contact/">Contacto y Sobre mí</a> — Perfil académico, competencias técnicas y enlaces directos a mis repositorios.</li>
+</ul>
+<h2 id="sobre-mí-y-mi-perfil-de-github-p11">Sobre mí y mi perfil de GitHub (P1.1)</h2>
+<p>Puedes consultar mis proyectos, scripts de administración de sistemas y el código fuente de este sitio en mi <a href="https://github.com/javiperomingo">perfil oficial de GitHub (@javiperomingo)</a>.</p>
+
+    <h2>Últimas entradas del Blog</h2>
+    <ul class="post-list">
+    
+        <li class="post-card">
+            <div class="post-meta">5 de noviembre de 2026</div>
+            <h2><a href="/mi-sitio-hugo/posts/publicacion-github-pages/">Despliegue de nuestro sitio Hugo en GitHub Pages (PrácticaX2)</a></h2>
+            <p>Para publicar nuestro sitio Hugo en GitHub Pages bajo la subruta del repositorio (https://javiperomingo.github.io/mi-sitio-hugo/), hemos aplicado tres ajustes esenciales:
+Configuración de baseURL y publishDir: En hugo.toml definimos la URL pública final y el directorio de salida para que Hugo genere todas las rutas de forma coherente. Uso de relURL en las plantillas: En los parciales de cabecera y navegación empleamos {{ &quot;css/estilo.css&quot; | relURL }} y {{ .Site.Home.RelPermalink }} para evitar enlaces o estilos rotos al servir la web desde un subdirectorio. Fichero .nojekyll: Añadimos static/.nojekyll para que GitHub Pages sirva directamente el HTML plano generado por Hugo sin procesarlo con Jekyll. </p>
+            <a href="/mi-sitio-hugo/posts/publicacion-github-pages/">Leer más &rarr;</a>
+        </li>
+    
+        <li class="post-card">
+            <div class="post-meta">3 de noviembre de 2026</div>
+            <h2><a href="/mi-sitio-hugo/posts/despliegue-sitios-estaticos-iaw/">Ventajas de los generadores de sitios estáticos en IAW</a></h2>
+            <p>En el módulo de Implantación de Aplicaciones Web (IAW) buscamos desplegar aplicaciones web de forma simple, segura y robusta.
+Algunas ventajas clave de usar Hugo frente a gestores de contenido dinámicos tradicionales son:
+Rendimiento: Al servir HTML plano pregenerado, la respuesta del servidor web es inmediata. Seguridad: No hay base de datos que pueda sufrir inyecciones SQL ni código dinámico ejecutándose en cada petición. Portabilidad y control de versiones: Todo el sitio (configuración, plantillas y contenido en Markdown) vive dentro de un repositorio Git. </p>
+            <a href="/mi-sitio-hugo/posts/despliegue-sitios-estaticos-iaw/">Leer más &rarr;</a>
+        </li>
+    
+        <li class="post-card">
+            <div class="post-meta">3 de noviembre de 2026</div>
+            <h2><a href="/mi-sitio-hugo/posts/hello-world/">Primeros pasos con Hugo: estructura y plantillas</a></h2>
+            <p>En esta primera entrada exploramos cómo Hugo estructura un proyecto web estático separando de forma limpia el contenido (content/), la presentación (layouts/ y static/) y la configuración general (hugo.toml).
+A diferencia de otros sistemas más pesados, Hugo compila los documentos escritos en Markdown aplicando plantillas HTML y parciales reutilizables (como nuestra cabecera header.html y pie de página footer.html) en cuestión de milisegundos.
+</p>
+            <a href="/mi-sitio-hugo/posts/hello-world/">Leer más &rarr;</a>
+        </li>
+    
+    </ul>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 Javier Peromingo — Implantación de Aplicaciones Web (IAW - 2º ASIR) · <a href="https://github.com/javiperomingo" target="_blank" rel="noopener">Perfil de GitHub</a> · <a href="https://github.com/javiperomingo/mi-sitio-hugo" target="_blank" rel="noopener">Repositorio</a></p>
+    </footer>
+</body>
+</html>
+

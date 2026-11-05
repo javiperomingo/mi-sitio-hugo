@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Blog Técnico de IAW on Sitio Web de Javier Peromingo — IAW 2º ASIR</title>
+		<link>https://javiperomingo.github.io/mi-sitio-hugo/posts/</link>
+		<description>Recent content in Blog Técnico de IAW on Sitio Web de Javier Peromingo — IAW 2º ASIR</description>
+		<generator>Hugo</generator>
+		<language>es-es</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 05 Nov 2026 17:30:00 +0100</lastBuildDate>
+		
+			<atom:link href="https://javiperomingo.github.io/mi-sitio-hugo/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Despliegue de nuestro sitio Hugo en GitHub Pages (PrácticaX2)</title>
+				<link>https://javiperomingo.github.io/mi-sitio-hugo/posts/publicacion-github-pages/</link>
+				<pubDate>Thu, 05 Nov 2026 17:30:00 +0100</pubDate>
+				<guid>https://javiperomingo.github.io/mi-sitio-hugo/posts/publicacion-github-pages/</guid>
+				<description>&lt;p&gt;Para publicar nuestro sitio Hugo en &lt;strong&gt;GitHub Pages&lt;/strong&gt; bajo la subruta del repositorio (&lt;code&gt;https://javiperomingo.github.io/mi-sitio-hugo/&lt;/code&gt;), hemos aplicado tres ajustes esenciales:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Configuración de &lt;code&gt;baseURL&lt;/code&gt; y &lt;code&gt;publishDir&lt;/code&gt;:&lt;/strong&gt; En &lt;code&gt;hugo.toml&lt;/code&gt; definimos la URL pública final y el directorio de salida para que Hugo genere todas las rutas de forma coherente.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Uso de &lt;code&gt;relURL&lt;/code&gt; en las plantillas:&lt;/strong&gt; En los parciales de cabecera y navegación empleamos &lt;code&gt;{{ &amp;quot;css/estilo.css&amp;quot; | relURL }}&lt;/code&gt; y &lt;code&gt;{{ .Site.Home.RelPermalink }}&lt;/code&gt; para evitar enlaces o estilos rotos al servir la web desde un subdirectorio.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fichero &lt;code&gt;.nojekyll&lt;/code&gt;:&lt;/strong&gt; Añadimos &lt;code&gt;static/.nojekyll&lt;/code&gt; para que GitHub Pages sirva directamente el HTML plano generado por Hugo sin procesarlo con Jekyll.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+			</item>
+			<item>
+				<title>Ventajas de los generadores de sitios estáticos en IAW</title>
+				<link>https://javiperomingo.github.io/mi-sitio-hugo/posts/despliegue-sitios-estaticos-iaw/</link>
+				<pubDate>Tue, 03 Nov 2026 12:30:00 +0100</pubDate>
+				<guid>https://javiperomingo.github.io/mi-sitio-hugo/posts/despliegue-sitios-estaticos-iaw/</guid>
+				<description>&lt;p&gt;En el módulo de &lt;strong&gt;Implantación de Aplicaciones Web (IAW)&lt;/strong&gt; buscamos desplegar aplicaciones web de forma simple, segura y robusta.&lt;/p&gt;&#xA;&lt;p&gt;Algunas ventajas clave de usar Hugo frente a gestores de contenido dinámicos tradicionales son:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rendimiento:&lt;/strong&gt; Al servir HTML plano pregenerado, la respuesta del servidor web es inmediata.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Seguridad:&lt;/strong&gt; No hay base de datos que pueda sufrir inyecciones SQL ni código dinámico ejecutándose en cada petición.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Portabilidad y control de versiones:&lt;/strong&gt; Todo el sitio (configuración, plantillas y contenido en Markdown) vive dentro de un repositorio Git.&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+			</item>
+			<item>
+				<title>Primeros pasos con Hugo: estructura y plantillas</title>
+				<link>https://javiperomingo.github.io/mi-sitio-hugo/posts/hello-world/</link>
+				<pubDate>Tue, 03 Nov 2026 10:00:00 +0100</pubDate>
+				<guid>https://javiperomingo.github.io/mi-sitio-hugo/posts/hello-world/</guid>
+				<description>&lt;p&gt;En esta primera entrada exploramos cómo &lt;strong&gt;Hugo&lt;/strong&gt; estructura un proyecto web estático separando de forma limpia el contenido (&lt;code&gt;content/&lt;/code&gt;), la presentación (&lt;code&gt;layouts/&lt;/code&gt; y &lt;code&gt;static/&lt;/code&gt;) y la configuración general (&lt;code&gt;hugo.toml&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;A diferencia de otros sistemas más pesados, Hugo compila los documentos escritos en &lt;strong&gt;Markdown&lt;/strong&gt; aplicando plantillas HTML y parciales reutilizables (como nuestra cabecera &lt;code&gt;header.html&lt;/code&gt; y pie de página &lt;code&gt;footer.html&lt;/code&gt;) en cuestión de milisegundos.&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

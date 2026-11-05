@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despliegue de nuestro sitio Hugo en GitHub Pages (PrácticaX2) | Sitio Web de Javier Peromingo — IAW 2º ASIR</title>
+    <meta name="description" content="Práctica de despliegue de sitio estático con Hugo y GitHub Pages — Implantación de Aplicaciones Web (2º ASIR)">
+    <link rel="stylesheet" href="/mi-sitio-hugo/css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="nav-wrapper">
+            <a class="brand" href="/mi-sitio-hugo/">Javier Peromingo · 2º ASIR</a>
+            <nav>
+                <a href="/mi-sitio-hugo/">Inicio</a>
+                <a href="/mi-sitio-hugo/posts/">Blog</a>
+                <a href="/mi-sitio-hugo/contact/">Contacto y Sobre mí</a>
+                <a href="https://github.com/javiperomingo" target="_blank" rel="noopener">GitHub</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+
+    <p class="post-meta">Publicado el 5 de noviembre de 2026</p>
+    <h1>Despliegue de nuestro sitio Hugo en GitHub Pages (PrácticaX2)</h1>
+    <p>Para publicar nuestro sitio Hugo en <strong>GitHub Pages</strong> bajo la subruta del repositorio (<code>https://javiperomingo.github.io/mi-sitio-hugo/</code>), hemos aplicado tres ajustes esenciales:</p>
+<ol>
+<li><strong>Configuración de <code>baseURL</code> y <code>publishDir</code>:</strong> En <code>hugo.toml</code> definimos la URL pública final y el directorio de salida para que Hugo genere todas las rutas de forma coherente.</li>
+<li><strong>Uso de <code>relURL</code> en las plantillas:</strong> En los parciales de cabecera y navegación empleamos <code>{{ &quot;css/estilo.css&quot; | relURL }}</code> y <code>{{ .Site.Home.RelPermalink }}</code> para evitar enlaces o estilos rotos al servir la web desde un subdirectorio.</li>
+<li><strong>Fichero <code>.nojekyll</code>:</strong> Añadimos <code>static/.nojekyll</code> para que GitHub Pages sirva directamente el HTML plano generado por Hugo sin procesarlo con Jekyll.</li>
+</ol>
+
+    <hr style="border:0; border-top:1px solid #e2e8f0; margin: 28px 0 16px 0;">
+    <p><a href="/mi-sitio-hugo/">&larr; Volver al inicio</a></p>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 Javier Peromingo — Implantación de Aplicaciones Web (IAW - 2º ASIR) · <a href="https://github.com/javiperomingo" target="_blank" rel="noopener">Perfil de GitHub</a> · <a href="https://github.com/javiperomingo/mi-sitio-hugo" target="_blank" rel="noopener">Repositorio</a></p>
+    </footer>
+</body>
+</html>
+
