@@ -1,4 +1,16 @@
 {{ partial "header.html" . }}
+    <span class="badge">PrácticaX2 · Hugo + GitHub Pages</span>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <h2>Últimas entradas del Blog</h2>
+    <ul class="post-list">
+    {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+        <li class="post-card">
+            {{ if .Date }}<div class="post-meta">{{ .Date | time.Format ":date_long" }}</div>{{ end }}
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Summary | plainify }}</p>
+            <a href="{{ .RelPermalink }}">Leer más &rarr;</a>
+        </li>
+    {{ end }}
+    </ul>
 {{ partial "footer.html" . }}

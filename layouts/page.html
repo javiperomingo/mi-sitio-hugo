@@ -1,5 +1,7 @@
 {{ partial "header.html" . }}
-    {{ if .Date }}<p><small>{{ .Date | time.Format ":date_long" }}</small></p>{{ end }}
+    {{ if .Date }}<p class="post-meta">Publicado el {{ .Date | time.Format ":date_long" }}</p>{{ end }}
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <hr style="border:0; border-top:1px solid #e2e8f0; margin: 28px 0 16px 0;">
+    <p><a href="{{ .Site.Home.RelPermalink }}">&larr; Volver al inicio</a></p>
 {{ partial "footer.html" . }}

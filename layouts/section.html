@@ -1,11 +1,14 @@
 {{ partial "header.html" . }}
+    <span class="badge">Blog de IAW</span>
     <h1>{{ .Title }}</h1>
-    <ul>
+    {{ .Content }}
+    <ul class="post-list">
     {{ range .RegularPages }}
-        <li>
-            {{ if .Date }}<small>{{ .Date | time.Format ":date_long" }}</small>{{ end }}
+        <li class="post-card">
+            {{ if .Date }}<div class="post-meta">{{ .Date | time.Format ":date_long" }}</div>{{ end }}
             <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-            <p>{{ .Summary | plainify }}... <a href="{{ .RelPermalink }}">Leer más</a></p>
+            <p>{{ .Summary | plainify }}</p>
+            <a href="{{ .RelPermalink }}">Leer artículo completo &rarr;</a>
         </li>
     {{ end }}
     </ul>
