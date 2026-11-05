@@ -1,6 +1,0 @@
-baseURL: http://localhost:1313/
-locale: es-es
-title: Sitio Web de Javier Peromingo
-disableKinds:
-  - taxonomy
-  - term
