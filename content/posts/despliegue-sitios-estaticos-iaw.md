@@ -1,6 +1,7 @@
 ---
-title: Ventajas de los generadores de sitios estáticos en IAW
-date: 2026-11-03 12:30:00
+title: "Ventajas de los generadores de sitios estáticos en IAW"
+date: 2026-11-03T12:30:00+01:00
+draft: false
 ---
 En el módulo de **Implantación de Aplicaciones Web (IAW)** buscamos desplegar aplicaciones web de forma simple, segura y robusta.
 

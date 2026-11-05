@@ -1,7 +1,8 @@
 ---
-title: Hola mundo con Hugo
-date: 2026-11-03 10:00:00
+title: "Primeros pasos con Hugo: estructura y plantillas"
+date: 2026-11-03T10:00:00+01:00
+draft: false
 ---
-Esta es mi primera entrada en el blog creado con **Hugo** siguiendo la serie de lecciones *Empezando* de Hugo Codex.
+En esta primera entrada exploramos cómo **Hugo** estructura un proyecto web estático separando de forma limpia el contenido (`content/`), la presentación (`layouts/` y `static/`) y la configuración general (`hugo.toml`).
 
-Hugo nos permite generar sitios web estáticos de forma ultrarrápida utilizando plantillas HTML y ficheros de contenido en formato Markdown, sin necesidad de bases de datos ni servidores de aplicaciones pesados.
+A diferencia de otros sistemas más pesados, Hugo compila los documentos escritos en **Markdown** aplicando plantillas HTML y parciales reutilizables (como nuestra cabecera `header.html` y pie de página `footer.html`) en cuestión de milisegundos.

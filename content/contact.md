@@ -1,15 +1,19 @@
 ---
-title: Contacto y Sobre mí
+title: "Contacto y Sobre mí"
+draft: false
 ---
-Soy **Javier Peromingo**, estudiante de 2º de Administración de Sistemas Informáticos en Red (ASIR).
+Soy **Javier Peromingo**, alumno de **2º ASIR** especializado en administración de sistemas Linux/Windows, servicios de red e implantación de aplicaciones web.
 
 ## Sobre mí
 
-Puedes ver mis proyectos en mi [perfil de GitHub](https://github.com/javiperomingo).
+Durante este curso en el módulo de **Implantación de Aplicaciones Web (IAW)** trabajamos con arquitecturas web modernas, control de versiones con Git desde terminal y despliegue de sitios estáticos mediante **Hugo** y **GitHub Pages**.
 
-## Contacto
+Puedes revisar todos mis trabajos y repositorios en mi [perfil de GitHub](https://github.com/javiperomingo).
 
-Si quieres ponerte en contacto conmigo para consultar cualquier duda sobre mis proyectos o prácticas de ASIR, puedes escribirme o visitar mi repositorio:
+## Datos de contacto
 
-- **GitHub:** [https://github.com/javiperomingo](https://github.com/javiperomingo)
-- **Correo electrónico:** javiperomingo@users.noreply.github.com
+Si deseas contactar conmigo para cualquier consulta sobre mis prácticas o proyectos de ASIR:
+
+- **Perfil de GitHub:** [https://github.com/javiperomingo](https://github.com/javiperomingo)
+- **Repositorio de este proyecto:** [https://github.com/javiperomingo/mi-sitio-hugo](https://github.com/javiperomingo/mi-sitio-hugo)
+- **Correo electrónico:** `javiperomingo@users.noreply.github.com`
